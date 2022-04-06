@@ -1,0 +1,63 @@
+Arguments: 
+  /Users/buncolak/.nvm/versions/node/v16.14.2/bin/node /Users/buncolak/.yarn/bin/yarn.js
+
+PATH: 
+  /Users/buncolak/.yarn/bin:/Users/buncolak/.config/yarn/global/node_modules/.bin:/Users/buncolak/.nvm/versions/node/v16.14.2/bin:/Users/buncolak/Downloads/google-cloud-sdk/bin:/Users/buncolak/.pyenv/shims:/Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/buncolak/.cargo/bin:/Users/buncolak/go/bin
+
+Yarn version: 
+  1.22.18
+
+Node version: 
+  16.14.2
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile '/Users/buncolak/Library/Caches/Yarn/v6/npm-minimatch-4.2.1-40d9d511a46bdc4e563c22c3080cde9c0d8299b4-integrity/node_modules/minimatch/LICENSE' -> '/Users/buncolak/Desktop/Projects/twitter-remix/remix-app/node_modules/@graphql-codegen/cli/node_modules/minimatch/LICENSE'
+
+npm manifest: 
+  {
+    "name": "remix-template-vercel",
+    "private": true,
+    "description": "",
+    "license": "",
+    "sideEffects": false,
+    "scripts": {
+      "build": "remix build",
+      "dev": "remix dev"
+    },
+    "dependencies": {
+      "@apollo/client": "^3.5.10",
+      "@graphql-codegen/cli": "^2.6.2",
+      "@graphql-codegen/typescript": "^2.4.8",
+      "@graphql-codegen/typescript-document-nodes": "^2.2.8",
+      "@graphql-codegen/typescript-operations": "^2.3.5",
+      "@remix-run/node": "^1.3.4",
+      "@remix-run/react": "^1.3.4",
+      "@remix-run/vercel": "^1.3.4",
+      "@vercel/node": "^1.14.0",
+      "graphql": "^16.3.0",
+      "graphql-tag": "^2.12.6",
+      "react": "^17.0.2",
+      "react-dom": "^17.0.2"
+    },
+    "devDependencies": {
+      "@remix-run/dev": "^1.3.4",
+      "@remix-run/eslint-config": "^1.3.4",
+      "@remix-run/serve": "^1.3.4",
+      "@types/react": "^17.0.24",
+      "@types/react-dom": "^17.0.9",
+      "eslint": "^8.11.0",
+      "typescript": "^4.5.5"
+    },
+    "engines": {
+      "node": ">=14"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
