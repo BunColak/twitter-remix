@@ -1,0 +1,11 @@
+schema:
+  - ${API_URL}:
+      headers:
+        X-Hasura-Admin-Secret: ${ADMIN_KEY}
+documents: "app/**/queries/*.graphql"
+generates:
+  ./app/graphql/generated.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-document-nodes
