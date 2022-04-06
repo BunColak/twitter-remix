@@ -1,4 +1,3 @@
-import { ApolloQueryResult, gql } from "@apollo/client";
 import { LoaderFunction } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 import React from "react";
