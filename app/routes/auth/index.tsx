@@ -1,11 +1,11 @@
-const supertokens = require("supertokens-node");
-const Session = require("supertokens-node/recipe/session");
+import supertokens from "supertokens-node";
+import Session from "supertokens-node/recipe/session";
 
 supertokens.init({
     framework: "express",
     supertokens: {
         // These are the connection details of the app you created on supertokens.com
-        connectionURI: process.env.SUPERTOKENS_URI,
+        connectionURI: process.env.SUPERTOKENS_URI!,
         apiKey: process.env.SUPERTOKENS_KEY,
     },
     appInfo: {
@@ -19,11 +19,12 @@ supertokens.init({
     recipeList: [
         Session.init({
             jwt: {
+                // @ts-ignore
                 enable: true,
                 override: {
-                    functions: function (originalImplementation) {
+                    functions: function (originalImplementation: any) {
                         return {
-                            ...originalImplementation, createNewSession: async function (input) {
+                            ...originalImplementation, createNewSession: async function (input: any) {
                                 input.accessTokenPayload = {
                                     ...input.accessTokenPayload,
                                     "https://hasura.io/jwt/claims":
